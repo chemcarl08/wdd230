@@ -90,11 +90,6 @@
             padding: .25rem 2vw;
     }
 
-    header.dark-mode, nav.dark-mode, main.dark-mode, footer.dark-mode {
-            background-color: black;
-            color: white;
-        }
-
     header, nav, main, footer {
         transition: background-color 0.3s, color 0.3s;
     }
