@@ -8,5 +8,12 @@ function updateLastModified() {
     document.getElementById('lastModified').textContent = `Last Modified: ${lastModifiedDate}`;
 }
 
-updateCopyrightYear();
-updateLastModified();
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const menuLinks = document.getElementById('menuLinks');
+
+    menuToggle.addEventListener('click', () => {
+        menuLinks.classList.toggle('active');
+        menuToggle.textContent = menuLinks.classList.contains('active') ? '✖' : '≡';
+    });
+});

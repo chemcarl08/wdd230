@@ -1,5 +1,5 @@
 @media (max-width: 767px) {
-    nav ul {
+    nav ul{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -7,18 +7,29 @@
         margin: 0;
     }
 
-    nav ul li {
-        margin-bottom: 10px;
+    nav{
+        background-color: green;
     }
 
-    nav ul li a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #fff;
-        background-color: #333;
-        border-radius: 5px;
+    #menuToggle {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        width: 100%;
+        text-align: right;
+        padding: .25rem 2vw;
+   }
+    
+    ul.menu-links {
+        display: none;
     }
+    
+    ul.menu-links.active {
+        display: block;
+    }
+
 
     .grid-container {
         display: grid;
