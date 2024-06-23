@@ -8,21 +8,18 @@ function updateLastModified() {
     document.getElementById('lastModified').textContent = `Last Modified: ${lastModifiedDate}`;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    updateCopyrightYear();
-    updateLastModified();
-    const menuToggle = document.getElementById('menuToggle');
-    const menuLinks = document.getElementById('menuLinks');
+const menuToggle = document.querySelector('#menuToggle');
+const menuLinks = document.querySelector('#menuLinks');
 
-    menuToggle.addEventListener('click', () => {
-        menuLinks.classList.toggle('active');
-        menuToggle.textContent = menuLinks.classList.contains('active') ? '✖' : '≡';
-    });
+menuToggle.addEventListener('click', function () {
+    menuLinks.classList.toggle('active');
+    menuToggle.textContent = menuLinks.classList.contains('active') ? '✖' : '≡';
+});
 
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.body;
+// Dark mode toggle functionality using querySelector
+const darkModeToggle = document.querySelector('#darkModeToggle');
+const body = document.querySelector('body');
 
-    darkModeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-    });
+darkModeToggle.addEventListener('click', function () {
+    body.classList.toggle('dark-mode');
 });
