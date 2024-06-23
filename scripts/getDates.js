@@ -9,6 +9,11 @@ function updateLastModified() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Update copyright year and last modified date
+    updateCopyrightYear();
+    updateLastModified();
+
+    // Menu toggle functionality
     const menuToggle = document.getElementById('menuToggle');
     const menuLinks = document.getElementById('menuLinks');
 
@@ -16,9 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
         menuLinks.classList.toggle('active');
         menuToggle.textContent = menuLinks.classList.contains('active') ? '✖' : '≡';
     });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
+    // Dark mode toggle functionality
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
 
