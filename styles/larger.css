@@ -122,14 +122,14 @@ footer p {
         margin-bottom: 20px;
     }
 
-        #darkModeToggle {
-            font-size: 2rem;
-            background: none;
-            border: none;
-            color: white;
-            cursor: pointer;
-            width: 100%;
-            text-align: right;
-            padding: .20rem 2vw;
-        }
+    #darkModeToggle {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        width: 100%;
+        text-align: right;
+        padding: .20rem 2vw;
+    }
 }
