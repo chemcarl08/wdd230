@@ -80,6 +80,7 @@
     }
 
     #darkModeToggle {
+        position: absolute;
         font-size: 2rem;
         background: none;
         border: none;
@@ -104,4 +105,6 @@
     .dark-mode .information {
         color: white;
     }
+
+
 }
