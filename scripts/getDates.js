@@ -1,10 +1,12 @@
 function updateCopyrightYear() {
     const currentYear = new Date().getFullYear();
+    console.log('Current Year:', currentYear);  // Debug log
     document.getElementById('currentyear').textContent = currentYear;
 }
 
 function updateLastModified() {
     const lastModifiedDate = document.lastModified;
+    console.log('Last Modified:', lastModifiedDate);  // Debug log
     document.getElementById('lastModified').textContent = `Last Modified: ${lastModifiedDate}`;
 }
 

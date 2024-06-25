@@ -8,6 +8,11 @@
     <meta name="description"
         content="Edison Garcia WDD 230 - Web Frontend Development This page is the course assignment portal for assignments, projects, and resources.">
     <meta name="author" content="Edison Garcia">
+    <meta property="og:title" content="Saskatoon Chamber of Commerce Site plan">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This is the description for open graph.">
+    <meta property="og:image" content="https://chemcarl08.github.io/wdd230/images/preview.png">
+    <meta property="og:url" content="https://chemcarl08.github.io/wdd230">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap">
@@ -62,6 +67,10 @@
         <p>&copy; <span id="currentyear"></span> Edison Garcia, Saskatchewan Canada.</p>
         <p id="lastModified"></p>
     </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
 </body>
 
 </html>
