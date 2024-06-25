@@ -1,34 +1,20 @@
 /* Custom Normalize CSS */
 html {
     line-height: 1.15;
-    /* Prevent layout discrepancies in various browsers */
     -webkit-text-size-adjust: 100%;
-    /* Prevent font scaling in landscape while allowing user zoom */
 }
 
 body {
     margin: 0;
-    /* Remove default margin provided by browsers */
     font-family: 'Roboto', sans-serif;
-    /* Ensures a consistent font throughout */
 }
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-    /* Include padding and border in the element's total width and height */
     border-width: 0;
-    /* Remove borders */
     border-style: solid;
-    /* Default border style to solid */
-}
-
-img {
-    max-width: 100%;
-    /* Make images responsive */
-    display: block;
-    /* Remove extra space below images */
 }
 
 input,
@@ -36,9 +22,7 @@ button,
 textarea,
 select {
     font-family: inherit;
-    /* Form elements use the same font as body by default */
     font-size: 100%;
-    /* Prevent font resizing */
 }
 
 h1,
@@ -48,34 +32,25 @@ h4,
 h5,
 h6 {
     font-size: inherit;
-    /* Heading tags inherit body font size by default */
     font-weight: normal;
-    /* Normal font weight instead of bold */
 }
 
 ul,
 ol {
     list-style: none;
-    /* Remove default list style */
     padding: 0;
-    /* Remove padding */
     margin: 0;
-    /* Remove margins */
 }
 
 a {
     color: inherit;
-    /* Links inherit text color */
     text-decoration: none;
-    /* No underline */
 }
 
 table {
     border-collapse: collapse;
-    /* Collapse borders of table cells */
 }
 
 textarea {
     resize: none;
-    /* Disable resizing of textareas */
 }
