@@ -1,0 +1,68 @@
+/* Large View */
+header {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul {
+    flex-direction: row;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+#hero {
+    height: 300px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+#site-purpose,
+#events-issues {
+    display: flex;
+    justify-content: space-between;
+}
+
+#site-purpose {
+    flex: 2;
+}
+
+#site-purpose h2 {
+    flex: 1;
+}
+
+#site-purpose p {
+    flex: 1;
+    margin-left: 1em;
+}
+
+#featured-image {
+    flex: 1;
+    margin-left: 1em;
+}
+
+#events-issues {
+    display: flex;
+    justify-content: space-between;
+}
+
+#events-issues .events,
+#events-issues .issues {
+    flex: 1;
+    margin-right: 1em;
+}
+
+#events-issues .events {
+    margin-right: 2em;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
