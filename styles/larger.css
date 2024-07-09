@@ -55,12 +55,6 @@ nav ul li a.active {
     background-color: #8b4513;
 }
 
-main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
 .card {
     background-color: #fff;
     padding: 20px;
@@ -96,6 +90,41 @@ footer {
 
 footer p {
     margin: 5px 0;
+}
+
+.hero{
+position:relative;
+
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero span {
+position:absolute;
+top:0;
+left:0;
+right:0;
+background-color: rgba(255,255,255,0.5);
+padding: 1rem;
+text-align: center;
+}
+
+iframe {
+    width: 100%;
+}
+
+.label {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+
+#visits {
+    color: navy;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 @media (min-width: 768px) {
