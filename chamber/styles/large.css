@@ -98,7 +98,7 @@ footer img {
     align-items: center;
 }
 
-#site-purpose h2 {
+#site-purpose h2, h1 {
     flex: 1;
 }
 
