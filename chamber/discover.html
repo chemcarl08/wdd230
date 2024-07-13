@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the Chamber of Commerce website. Join us to support and grow our local businesses.">
+    <meta name="author" content="Edison Garcia">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/chemcarl08/wdd230/blob/main/images/profile.jpg">
+    <meta property="og:url" content="https://your-chamber-site.com">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+        <header>
+            <img src="images/logo.png" alt="Logo">
+            <nav>
+                <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">≡</button>
+                <ul id="menuLinks" class="menu-links">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="#"class="active">Discover</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Directory</a></li>
+                </ul>
+            </nav>
+        </header>
+        <img src="images/saskatoon.webp" alt="Saskatoon" class="top-image">
+
+<main class="discover-main">
+    <div class="sidebar">
+        <section id="visit-info">
+            <h2>Visit Information</h2>
+            <p id="visit-message"></p>
+        </section>
+        <section id="sidebar-content">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <h3>Business Networking Breakfast</h3>
+                <p>Date: July 20, 2024<br>Time: 8:00 AM - 10:00 AM<br>Location: Chamber Hall</p>
+            </div>
+            <div class="event">
+                <h3>Small Business Workshop</h3>
+                <p>Date: August 5, 2024<br>Time: 2:00 PM - 4:00 PM<br>Location: Conference Room A</p>
+            </div>
+            <div class="event">
+                <h3>Annual Chamber Gala</h3>
+                <p>Date: September 15, 2024<br>Time: 6:00 PM - 9:00 PM<br>Location: Grand Ballroom</p>
+            </div>
+        </section>
+    </div>
+    <div class="main-content">
+        <h2>Membership Registrations</h2>
+        <img src="images/join us.webp" alt="Join Us" loading="lazy">
+        <p>Membership Registrations reflect the growth of businesses and individuals actively engaging in our Chamber
+            community in Concepción. By joining, members gain access to a supportive network, resources, and
+            opportunities aimed at fostering business growth and collaboration.</p>
+
+        <h2>Local Photos of Interest</h2>
+        <div class="photo-gallery">
+            <figure>
+                <img src="images/photo1.webp" alt="Photo 1" loading="lazy">
+                <figcaption>Showing the downtown in the morning.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo2.webp" alt="Photo 2" loading="lazy">
+                <figcaption>Showing the Saskatchewan River.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo3.webp" alt="Photo 3" loading="lazy">
+                <figcaption>Picture of Saskatoon Downtown with the Aurora.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo4.webp" alt="Photo 4" loading="lazy">
+                <figcaption>Picture of one of the bridge in Saskatoon.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo5.webp" alt="Photo 5" loading="lazy">
+                <figcaption>Picture showing the other side of the city.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo6.webp" alt="Photo 6" loading="lazy">
+                <figcaption>Top view of the Saskatoon downtown.</figcaption>
+            </figure>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> Edison Garcia, Saskatchewan Canada.</p>
+    <p id="lastModified"></p>
+    <nav>
+        <a href="https://instagram.com">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com">
+            <img src="images/tiktok.png" alt="Tiktok">
+        </a>
+    </nav>
+</footer>
+</body>
+
+</html>
