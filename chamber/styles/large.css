@@ -143,3 +143,7 @@ footer img {
     height: auto;
     display: block;
 }
+
+h1 {
+    display: none;
+}
