@@ -1,11 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Set the current year
     document.getElementById('currentyear').textContent = new Date().getFullYear();
 
-    // Set the last modified date
     document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
 
-    // Menu toggle
     const menuToggle = document.querySelector('#menuToggle');
     const menuLinks = document.querySelector('#menuLinks');
 
@@ -17,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
         menuToggle.textContent = menuLinks.classList.contains('active') ? '✖' : '≡';
     });
 
-    // Dark mode toggle
     const darkModeToggle = document.querySelector('#darkModeToggle');
     const body = document.querySelector('body');
 
@@ -28,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.toggle('dark-mode');
     });
 
-    // Function to check if passwords match
     function checkPasswords() {
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirm_password').value;
