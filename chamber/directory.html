@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory - Chamber of Commerce</title>
+    <meta name="description" content="Browse our member directory.">
+    <meta name="author" content="Edison Garcia">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta property="og:title" content="Directory - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/chemcarl08/wdd230/blob/main/images/profile.jpg">
+    <meta property="og:url" content="https://your-chamber-site.com">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Chamber of Commerce Logo">
+        <nav>
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">≡</button>
+            <ul id="menuLinks" class="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#" class="active">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Member Directory</h1>
+        <div id="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <section id="directory"></section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Edison Garcia, Saskatchewan Canada.</p>
+        <p id="lastModified"></p>
+        <nav>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Follow us on Instagram">
+            </a>
+            <a href="https://tiktok.com">
+                <img src="images/tiktok.png" alt="Follow us on Tiktok">
+            </a>
+        </nav>
+    </footer>
+
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>

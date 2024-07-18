@@ -38,3 +38,41 @@ document.addEventListener('DOMContentLoaded', function () {
     const timestamp = new Date().toISOString();
     document.getElementById('timestamp').value = timestamp;
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const directory = document.getElementById('directory');
+    const gridViewButton = document.getElementById('grid-view');
+    const listViewButton = document.getElementById('list-view');
+
+    fetch('data/members.json')
+        .then(response => response.json())
+        .then(data => {
+            displayMembers(data, 'grid');
+
+            gridViewButton.addEventListener('click', () => displayMembers(data, 'grid'));
+            listViewButton.addEventListener('click', () => displayMembers(data, 'list'));
+        });
+
+    function displayMembers(members, view) {
+        directory.innerHTML = '';
+        directory.classList.toggle('grid', view === 'grid');
+        directory.classList.toggle('list', view === 'list');
+
+        members.forEach(member => {
+            const memberElement = document.createElement('div');
+            memberElement.classList.add('member');
+
+            memberElement.innerHTML = `
+                <img src="images/${member.image}" alt="${member.name} Logo">
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">${member.website}</a>
+                <p>${member.membership} Member</p>
+                <p>${member.description}</p>
+            `;
+
+            directory.appendChild(memberElement);
+        });
+    }
+});

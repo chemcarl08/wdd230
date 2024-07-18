@@ -230,4 +230,20 @@
          .membership-level.gold {
              color: rgb(6, 56, 63);
          }
+
+                 /* Directory page base styles */
+                 #directory {
+                     display: flex;
+                     flex-wrap: wrap;
+                     justify-content: center;
+                     margin-top: 20px;
+                 }
+        
+                 #directory.grid {
+                     flex-direction: row;
+                 }
+        
+                 #directory.list {
+                     flex-direction: column;
+                 }
          }
