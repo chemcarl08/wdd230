@@ -149,4 +149,86 @@
         padding: 5px;
         background-color: #eee;
     }
+
+    /*join.html*/
+         .join-main {
+             display: grid;
+             grid-template-columns: 1fr;
+             gap: 20px;
+         }
+    
+         #membership-form,
+         #membership-benefits {
+             padding: 20px;
+             border-radius: 5px;
+             background-color: #fff;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         }
+    
+         #membership-form h2,
+         #membership-benefits h2 {
+             font-size: 2em;
+             font-weight: bold;
+             margin-bottom: 20px;
+         }
+    
+         #membership-form label {
+             display: flex;
+             flex-direction: column;
+             margin-bottom: 10px;
+         }
+    
+         #membership-form input[type="text"],
+         #membership-form input[type="email"],
+         #membership-form input[type="tel"],
+         #membership-form textarea,
+         #membership-form select {
+             padding: 10px;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+         }
+    
+         #membership-form input[type="submit"] {
+             padding: 10px 20px;
+             background-color: #8b4513;
+             color: #fff;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+         }
+    
+         #membership-form input[type="submit"]:hover {
+             background-color: #5a2b0c;
+         }
+    
+         .membership-level {
+             background-size: cover;
+             color: #fff;
+             padding: 20px;
+             border-radius: 5px;
+             margin-bottom: 20px;
+             text-align: center;
+         }
+    
+         .membership-level h3 {
+             font-size: 1.5em;
+             margin-bottom: 10px;
+         }
+    
+         .membership-level.free {
+             color: black;
+         }
+    
+         .membership-level.bronze {
+             color: #cd7f32;
+         }
+    
+         .membership-level.silver {
+             color: silver;
+         }
+    
+         .membership-level.gold {
+             color: gold;
+         }
+         }
 }

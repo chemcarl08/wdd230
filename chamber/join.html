@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Chamber of Commerce</title>
+    <meta name="description" content="Join the Chamber of Commerce to support and grow our local businesses.">
+    <meta name="author" content="Edison Garcia">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta property="og:title" content="Join - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/chemcarl08/wdd230/blob/main/images/profile.jpg">
+    <meta property="og:url" content="https://your-chamber-site.com">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <nav>
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">≡</button>
+            <ul id="menuLinks" class="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="#">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <section id="membership-form">
+            <h2>Join the Chamber</h2>
+            <form method="get" action="thankyou.html">
+                <label for="first-name">First Name:
+                    <input type="text" id="first-name" name="first-name" required>
+                </label>
+                <label for="last-name">Last Name:
+                    <input type="text" id="last-name" name="last-name" required>
+                </label>
+                <label for="title">Title/Position:
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}">
+                </label>
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                </label>
+                <label for="phone">Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
+                <label for="organization">Organization Name:
+                    <input type="text" id="organization" name="organization" required>
+                </label>
+                <label for="membership-level">Membership Level:
+                    <select id="membership-level" name="membership-level">
+                        <option value="NP Membership">NP Membership (No Fee)</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description">Business/Organization Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section id="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <div class="membership-level free">
+                <h3>Free</h3>
+                <p>Start your journey with the Chamber of Commerce by signing up for our Free Membership. This level allows you to enjoy
+                essential benefits, stay informed about the latest updates, and participate in community events at no cost.</p>
+            </div>
+            <div class="membership-level bronze">
+                <h3>Bronze</h3>
+                <p>Upgrade to Bronze Membership by contributing to the Chamber with a small annual fee. This level grants you access to
+                additional resources, exclusive networking events, and enhanced promotional opportunities for your business.</p>
+            </div>
+            <div class="membership-level silver">
+                <h3>Silver</h3>
+                <p>Elevate your engagement with the Chamber by choosing Silver Membership. For a moderate annual fee, you will receive all
+                the benefits of Bronze Membership, plus premium event invitations, greater discounts, and more significant advertising
+                opportunities.</p>
+            </div>
+            <div class="membership-level gold">
+                <h3>Gold</h3>
+                <p>Achieve the highest level of involvement with the Chamber through Gold Membership. This premium tier offers all the
+                advantages of Silver Membership, along with exclusive high-level networking events, priority support, and maximum
+                exposure for your business.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Edison Garcia, Saskatchewan Canada.</p>
+        <p id="lastModified"></p>
+        <nav>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://tiktok.com">
+                <img src="images/tiktok.png" alt="Tiktok">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
