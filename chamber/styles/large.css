@@ -221,11 +221,11 @@ h1 {
 }
 
 .membership-level.silver {
-    color: rgb(224, 99, 99);
+    color: rgb(39, 24, 245);
 }
 
 .membership-level.gold {
-    color: rgb(199, 181, 78);
+    color: rgb(61, 196, 113);
 }
 
 @media (min-width: 769px) {
