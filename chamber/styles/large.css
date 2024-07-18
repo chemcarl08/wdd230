@@ -217,15 +217,15 @@ h1 {
 }
 
 .membership-level.bronze {
-    color: #cd7f32;
+    color: #c7340f;
 }
 
 .membership-level.silver {
-    color: silver;
+    color: rgb(224, 99, 99);
 }
 
 .membership-level.gold {
-    color: gold;
+    color: rgb(199, 181, 78);
 }
 
 @media (min-width: 769px) {
