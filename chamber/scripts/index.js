@@ -33,3 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     localStorage.setItem('lastVisit', currentVisit);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const timestamp = new Date().toISOString();
+    document.getElementById('timestamp').value = timestamp;
+});
