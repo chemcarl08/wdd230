@@ -243,3 +243,39 @@ h1 {
         grid-column: 2 / 3;
     }
 }
+
+#thank-you {
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#thank-you h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#thank-you p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+#thank-you .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #8b4513;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#thank-you .button:hover {
+    background-color: #5a2b0c;
+}

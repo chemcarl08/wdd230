@@ -4,11 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanks Page</title>
+    <title>Thank You - Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining the Chamber of Commerce.">
+    <meta name="author" content="Edison Garcia">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta property="og:title" content="Thank You - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/chemcarl08/wdd230/blob/main/images/profile.jpg">
+    <meta property="og:url" content="https://your-chamber-site.com">
 </head>
 
 <body>
-    <h1>Welcome aboard! You're officially a member now. Get ready for exclusive perks and benefits coming your way! Its always exciting to have a new members join the community</h1>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <nav>
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">≡</button>
+            <ul id="menuLinks" class="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="thank-you">
+            <h2>Thank You!</h2>
+            <p>Thank you for joining the Chamber of Commerce. We are excited to have you as a member and look forward to
+                supporting your business growth and success.</p>
+            <p>You will receive a confirmation email shortly with further details.</p>
+            <a href="index.html" class="button">Return to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Edison Garcia, Saskatchewan Canada.</p>
+        <p id="lastModified"></p>
+        <nav>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://tiktok.com">
+                <img src="images/tiktok.png" alt="Tiktok">
+            </a>
+        </nav>
+    </footer>
+
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
 </body>
 
 </html>
