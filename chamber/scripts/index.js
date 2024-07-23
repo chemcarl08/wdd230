@@ -62,15 +62,25 @@ document.addEventListener('DOMContentLoaded', () => {
             const memberElement = document.createElement('div');
             memberElement.classList.add('member');
 
-            memberElement.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name} Logo">
-                <h3>${member.name}</h3>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <a href="${member.website}" target="_blank">${member.website}</a>
-                <p>${member.membership} Member</p>
-                <p>${member.description}</p>
-            `;
+            if (view === 'list') {
+                memberElement.innerHTML = `
+                    <img src="images/${member.image}" alt="${member.name} Logo">
+                    <div class="member-info">
+                        <h3>${member.name}</h3>
+                        <p>${member.address}</p>
+                        <p>${member.phone}</p>
+                        <a href="${member.website}" target="_blank">${member.website}</a>
+                    </div>
+                `;
+            } else {
+                memberElement.innerHTML = `
+                    <img src="images/${member.image}" alt="${member.name} Logo">
+                    <h3>${member.name}</h3>
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+                    <a href="${member.website}" target="_blank">${member.website}</a>
+                `;
+            }
 
             directory.appendChild(memberElement);
         });

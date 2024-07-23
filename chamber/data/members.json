@@ -1,65 +1,51 @@
 [
     {
-        "name": "Company One",
-        "address": "123 Business St, Business City, BC",
-        "phone": "123-456-7890",
-        "website": "https://companyone.com",
-        "image": "companyone.png",
-        "membership": "Gold",
-        "description": "Leading company in tech innovation."
+        "name": "Great West Pharmacy",
+        "address": "A-901 22nd St. West Saskatoon, SK S7M0R9",
+        "phone": "306-986-6660",
+        "website": "https://greatwestpharmacy.com",
+        "image": "greatwest.webp"
     },
     {
-        "name": "Company Two",
-        "address": "456 Commerce Rd, Trade Town, TT",
-        "phone": "234-567-8901",
-        "website": "https://companytwo.com",
-        "image": "companytwo.png",
-        "membership": "Silver",
-        "description": "Pioneers in sustainable energy solutions."
+        "name": "Planet Fitness",
+        "address": "810 Circle Drive E Saskatoon, SK S7K3T8",
+        "phone": "639-638-1090",
+        "website": "https://planetfitness.com",
+        "image": "planetfitness.webp"
     },
     {
-        "name": "Company Three",
-        "address": "789 Enterprise Ave, Market City, MC",
-        "phone": "345-678-9012",
-        "website": "https://companythree.com",
-        "image": "companythree.png",
-        "membership": "Bronze",
-        "description": "Experts in financial consulting."
+        "name": "Speach Language Network",
+        "address": "110-410 Jessop Ave Saskatoon, SK S7N2S5",
+        "phone": "306-933-3222",
+        "website": "https://speechlanguagenetwork.com",
+        "image": "sln.webp"
     },
     {
-        "name": "Company Four",
-        "address": "101 Industry Dr, Work City, WC",
-        "phone": "456-789-0123",
-        "website": "https://companyfour.com",
-        "image": "companyfour.png",
-        "membership": "NP",
-        "description": "Non-profit organization supporting local businesses."
+        "name": "Hollistic Physiotherapy and Welness",
+        "address": "302 4th Ave N Saskatoon, Sk S7K1K7",
+        "phone": "306-373-0660",
+        "website": "https://hollisticphysiotherapy.com",
+        "image": "hollistic.webp"
     },
     {
-        "name": "Company Five",
-        "address": "202 Startup Ln, Innovation City, IC",
-        "phone": "567-890-1234",
-        "website": "https://companyfive.com",
-        "image": "companyfive.png",
-        "membership": "Gold",
-        "description": "Startup accelerator and incubator."
+        "name": "Prairie Pelvic Health",
+        "address": "105-619 8th St E Saskatoon, SK S7H0R1",
+        "phone": "306-244-0244",
+        "website": "https://pririepelvic.com",
+        "image": "prairie.webp"
     },
     {
-        "name": "Company Six",
-        "address": "303 Corporate Blvd, Business City, BC",
-        "phone": "678-901-2345",
-        "website": "https://companysix.com",
-        "image": "companysix.png",
-        "membership": "Silver",
-        "description": "Corporate law specialists."
+        "name": "Bayshore Home Health",
+        "address": "8-130 Robin Cres Saskatoon, SK S7L6M7",
+        "phone": "306-652-3314",
+        "website": "https://bayshore.com",
+        "image": "bayshore.webp"
     },
     {
-        "name": "Company Seven",
-        "address": "404 Innovation Way, Tech City, TC",
-        "phone": "789-012-3456",
-        "website": "https://companyseven.com",
-        "image": "companyseven.png",
-        "membership": "Bronze",
-        "description": "Leaders in AI and machine learning."
+        "name": "Donald Physiotherapy",
+        "address": "80-3211 Preston Ave Saskatoon, SK S7T1C9",
+        "phone": "306-933-3372",
+        "website": "https://donaldphysiotherapy.com",
+        "image": "donald.webp"
     }
 ]
