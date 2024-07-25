@@ -71,6 +71,13 @@ main.discover-main {
     gap: 10px;
 }
 
+@media (min-width: 769px) {
+    .photo-gallery img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+}
+
 figure {
     margin: 0;
 }
@@ -362,4 +369,27 @@ footer nav {
 
 footer nav a {
     margin: 0 15px;
+}
+
+#featured-image {
+    position: relative;
+}
+
+#meet-greet-banner {
+    display: none;
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+#close-banner {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }

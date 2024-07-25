@@ -85,4 +85,68 @@ document.addEventListener('DOMContentLoaded', () => {
             directory.appendChild(memberElement);
         });
     }
+    // meet banner
+    const today = new Date().getDay();
+    const banner = document.getElementById('meet-greet-banner');
+    if (today >= 1 && today <= 3) { // 1 = Monday, 2 = Tuesday, 3 = Wednesday
+        banner.style.display = 'block';
+    }
+
+    document.getElementById('close-banner').addEventListener('click', function () {
+        banner.style.display = 'none';
+    });
+
+    // Fetch weather data
+    const apiKey = 'd5cc5fb817ebb1044e5b548ee9d3eb69'; // Replace 'YOUR_API_KEY' with your actual API key
+    const city = 'Saskatoon,CA';
+    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+
+    fetch(weatherUrl)
+        .then(response => response.json())
+        .then(data => {
+            const weatherContainer = document.getElementById('weather');
+            const temperature = data.main.temp;
+            const description = data.weather[0].description;
+            weatherContainer.innerHTML = `<p>Current Temperature: ${temperature}°C</p><p>Weather: ${description}</p>`;
+        });
+
+    fetch(forecastUrl)
+        .then(response => response.json())
+        .then(data => {
+            const forecastContainer = document.getElementById('forecast');
+            let forecastHtml = '<h3>3-Day Forecast:</h3>';
+            const forecastData = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
+            forecastData.forEach(item => {
+                const date = new Date(item.dt * 1000).toLocaleDateString();
+                const temp = item.main.temp;
+                forecastHtml += `<p>${date}: ${temp}°C</p>`;
+            });
+            forecastContainer.innerHTML = forecastHtml;
+        });
+
+    // Spotlight members
+    const spotlightContainer = document.getElementById('spotlight');
+
+    fetch('data/members.json')
+        .then(response => response.json())
+        .then(data => {
+            const silverGoldMembers = data.filter(member => member.membership === 'silver' || member.membership === 'gold');
+            const selectedMembers = silverGoldMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+            let spotlightHtml = '<h2>Member Spotlight</h2>';
+            selectedMembers.forEach(member => {
+                spotlightHtml += `
+                    <div class="spotlight-member">
+                        <img src="images/${member.image}" alt="${member.name} Logo">
+                        <h3>${member.name}</h3>
+                        <p>${member.address}</p>
+                        <p>${member.phone}</p>
+                        <a href="${member.website}" target="_blank">${member.website}</a>
+                    </div>
+                `;
+            });
+            spotlightContainer.innerHTML = spotlightHtml;
+        });
 });
+
